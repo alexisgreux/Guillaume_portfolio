@@ -1,0 +1,16 @@
+{% include 'partials/header.twig' %}
+
+<a class="retour" href="{{ path_for('home')}}"><h5>Retour</h5></a>
+
+{% for _about in about %}
+
+    <h1 style="text-align:center;">{{_about.title}}</h1>
+    <div class="container">
+        <h3 class="description">{{_about.description}}</h3>
+        <div class="cover" style="background-image: url(../assets/img/{{_about.cover}});  ">
+    </div>
+    </div>
+
+{% endfor %}
+
+{% include 'partials/footer.twig' %}

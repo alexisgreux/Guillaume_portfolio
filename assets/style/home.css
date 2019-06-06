@@ -1,0 +1,95 @@
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+.about
+{
+    color:white;
+    position: absolute;
+    top:5vh;
+    right: 5vw;
+}
+
+.img-home
+{
+    width:100vw;
+    height:100vh;
+    position: relative;
+}
+
+.name
+{
+    width:100%;
+    color:white;
+    margin:0 auto;
+    margin-top:30vh;
+}
+
+.title
+{
+    display:flex;
+    width:100vw;
+    text-align: center;
+}
+
+.job
+{
+    width:100%;
+    color:white;
+    margin:0 auto;
+}
+
+.container-fluid{
+    position:absolute;
+    background-color:black;
+}
+
+.category
+{
+    color:white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+h1
+{
+    font-size:5em;
+}
+
+.category h1
+{
+    position: absolute;
+    bottom: 0;
+    opacity: 1px;;
+}
+
+a
+{
+    color:white;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-duration: 1s;
+}
+a:hover
+{
+    color: darkcyan;
+    text-decoration: none;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-duration: 1s;
+
+}
+
+.section
+{
+    align-content: flex-end;
+}
+
+.persona
+{
+    width:100%;
+    position: absolute;
+}

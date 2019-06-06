@@ -1,0 +1,17 @@
+{% include 'partials/header.twig' %}
+
+{% for _project in project %}
+
+
+<a class="retour" href="{{ path_for('projects', { slug: _project.category }) }}"><h5>Retour</h5></a>
+<h1 class="category_title">{{_project.title}}</h1>
+
+    <div class="card">
+        <div class="card-img-top" style="background-image: url(../../assets/img/{{_project.cover}}); ">
+        </div>
+        <p class="card-text">{{_project.description}}</p>
+    </div>
+
+{% endfor %}
+
+{% include 'partials/footer.twig' %}

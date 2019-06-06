@@ -1,0 +1,18 @@
+{% include 'partials/header.twig' %}
+<div class="title">
+    <img class="img-home " src="../assets/img/guillaume-bolduc.png" alt="Photo">
+    <div class="persona">
+        <h1 class="name">Guillaume Bolduc</h1>
+        <h2 class="job">Designer</h2>
+        <h2 class="about"><a href="{{path_for('about')}}">About</a></h2>
+    </div>
+</div>
+
+<div class="container-fluid" >
+    {% for _category in categorys %}
+        <div class="category" style="background-image: url(../assets/img/{{_category.cover}});">
+            <h1 class="section"><a href="{{ path_for('projects', { slug: _category.slug }) }}">{{_category.description}}</a></h1>
+        </div>
+    {% endfor %}
+</div>
+{% include 'partials/footer.twig' %}
