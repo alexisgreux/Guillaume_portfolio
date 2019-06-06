@@ -13,6 +13,7 @@ $app
 
             $viewData = [];
             $viewData['categorys'] = $categorys;
+            
 
             return $this->view->render($response, 'pages/home.twig', $viewData);
         }

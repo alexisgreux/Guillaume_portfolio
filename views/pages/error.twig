@@ -1,7 +1,9 @@
 {% include 'partials/header.twig' %}
 
+<a class="retour" href="{{ path_for("home") }}"><h5>Retour</h5></a>
 
-<h2>{{ code }}</h2>
-<h3>Please type a correct url</h3>
-
+<div class="mx-auto" style="width: 200px; margin-top:20%; text-align:center; color:white;">
+    <h2>{{ code }}</h2>
+    <h3>Please type a correct url</h3>
+</div>
 {% include 'partials/footer.twig' %}
